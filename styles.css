@@ -9,6 +9,9 @@
   - If you change the background color of your webpage, you may need to update this rule too.
 ***/
 
+html {
+  scroll-behavior: smooth;
+}
 
 
 html {
@@ -710,4 +713,5 @@ section {
 
 
 }
+
 
