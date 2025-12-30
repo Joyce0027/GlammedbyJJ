@@ -1,8 +1,8 @@
 /*** You will not need this file until Unit 5 ***/
 
-
-
-
+document.getElementById("button").addEventListener("click", function () {
+  window.location.href = "https://formspree.io/f/mjgbnzwv";
+});
 
 
 const backToTopButton = document.getElementById("back-to-top");
@@ -43,5 +43,6 @@ backToTopButton.addEventListener("click", () => {
 
 // You should remove the original click listener since we are using the form submit listener now:
 // submitButton.addEventListener("click", addParticipant); // <-- Delete this line
+
 
 
