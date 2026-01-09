@@ -24,7 +24,19 @@ backToTopButton.addEventListener("click", () => {
 });
 
 
+<script>
+const form = document.querySelector("form");
 
+form.addEventListener("submit", function () {
+  setTimeout(() => {
+    document.getElementById("deposit-popup").style.display = "flex";
+  }, 500);
+});
+
+function closePopup() {
+  document.getElementById("deposit-popup").style.display = "none";
+}
+</script>
 
 
 
@@ -44,6 +56,7 @@ backToTopButton.addEventListener("click", () => {
 
 // You should remove the original click listener since we are using the form submit listener now:
 // submitButton.addEventListener("click", addParticipant); // <-- Delete this line
+
 
 
 
