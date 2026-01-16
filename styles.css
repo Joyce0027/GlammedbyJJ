@@ -225,6 +225,10 @@ section {
   flex-wrap: nowrap;             /* keeps everything in one row */
 }
 
+#booking-section {
+  display: block;
+}
+
 
 
 
@@ -627,14 +631,6 @@ section {
 
 /** Mobile Device Friendly **
 /* General form styles (desktop first) */
-.booking-form {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
-
-}
 
 .form-row {
   display: flex;
@@ -678,18 +674,16 @@ section {
 /* ====== MOBILE STYLES ====== */
 @media (max-width: 768px) {
   .booking-form {
-    flex-direction: column; /* stack fields vertically */
-    gap: 15px;
+    width: 100%;
   }
 
   .form-row {
-    width: 90%; /* make input fields almost full width */
-    margin: 0 auto;
+    width: 100%; /* make input fields almost full width */
+ 
   }
 
   .submit-btn {
-    width: 90%; /* button full width */
-    margin: 0 auto;
+    width: 100%; /* button full width */
   }
 
   .neon-heading {
@@ -870,6 +864,7 @@ section {
 
 
 }
+
 
 
 
