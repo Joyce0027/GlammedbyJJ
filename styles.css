@@ -572,6 +572,57 @@ section {
 
  
 
+/* Neon pink heading */
+.neon-heading {
+  color: #ff00ff;
+  text-shadow:
+    0 0 5px #ff00ff,
+    0 0 10px #ff00ff,
+    0 0 20px #ff00ff,
+    0 0 40px #ff00ff;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 30px;
+}
+
+/* Form layout in horizontal rows */
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;      /* allows rows to wrap on smaller screens */
+  gap: 20px;
+  justify-content: center;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column; /* label above input */
+  min-width: 200px;       /* makes each row consistent width */
+}
+
+/* Input and select styling */
+.form-row input,
+.form-row select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Submit button styling */
+.submit-btn {
+  background-color: #ff00ff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: center; /* center the button */
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
 
 
 /*** Schedule Section ***
@@ -747,6 +798,7 @@ section {
 
 
 }
+
 
 
 
