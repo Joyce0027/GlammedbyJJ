@@ -630,9 +630,11 @@ section {
 /* General form styles (desktop first) */
 .booking-form {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
+  align-items: center;
+
 }
 
 .form-row {
@@ -869,6 +871,7 @@ section {
 
 
 }
+
 
 
 
