@@ -625,6 +625,78 @@ section {
 }
 
 
+
+/** Mobile Device Friendly **
+/* General form styles (desktop first) */
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+/* Neon heading */
+.neon-heading {
+  color: #ff00ff;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Input and select */
+.form-row input,
+.form-row select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+/* Submit button */
+.submit-btn {
+  background-color: #ff00ff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+
+/* ====== MOBILE STYLES ====== */
+@media (max-width: 768px) {
+  .booking-form {
+    flex-direction: column; /* stack fields vertically */
+    gap: 15px;
+  }
+
+  .form-row {
+    width: 90%; /* make input fields almost full width */
+    margin: 0 auto;
+  }
+
+  .submit-btn {
+    width: 90%; /* button full width */
+    margin: 0 auto;
+  }
+
+  .neon-heading {
+    font-size: 1.5rem; /* slightly smaller on mobile */
+  }
+}
+
+
 /*** Schedule Section ***
   
   Purpose:
@@ -798,6 +870,7 @@ section {
 
 
 }
+
 
 
 
