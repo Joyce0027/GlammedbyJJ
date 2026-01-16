@@ -708,23 +708,6 @@ section {
   - [ ] Any time after
 ***/
 
-body {
-  height: 100vh;
-  margin: 0;
-  background: linear-gradient(270deg, #ffffff, #ff00ff, #000000);
-  background-size: 600% 600%; /* makes the animation smoother */
-  animation: gradientMove 20s ease infinite;
-  font-family: 'Arial', sans-serif; /* optional for consistency */
-}
-
-/* Animation keyframes */
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-
 
   
  .block {
@@ -886,6 +869,7 @@ body {
 
 
 }
+
 
 
 
