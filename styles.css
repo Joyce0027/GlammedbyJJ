@@ -627,6 +627,39 @@ section {
   box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
 }
 
+/** Booking Section **/
+#booking-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* centers vertically on screen */
+}
+
+.form-container {
+  width: 100%;
+  max-width: 420px;      /* FIXED form width */
+  max-height: 550px;     /* CONTROLS how tall it gets */
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+  overflow-y: auto;      /* scrolls if form is too long */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /** Mobile Device Friendly **
@@ -863,6 +896,7 @@ section {
 
 
 }
+
 
 
 
