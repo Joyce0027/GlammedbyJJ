@@ -630,9 +630,15 @@ section {
 /** Booking Section **/
 #booking-section {
   display: flex;
-  flex-direction: coulmn;
+  justify-content: center;
   align-items: center;
   min-height: 100vh; /* centers vertically on screen */
+}
+
+.form-container form {
+  dispaly: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .form-container {
@@ -896,6 +902,7 @@ section {
 
 
 }
+
 
 
 
