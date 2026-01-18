@@ -868,6 +868,25 @@ section {
 }
 
 
+/** FAQ */ 
+.questions {
+  text-align: center;
+  max-width: 600px; 
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*** Custom Colors (OPTIONAL) ***
   
@@ -902,6 +921,7 @@ section {
 
 
 }
+
 
 
 
