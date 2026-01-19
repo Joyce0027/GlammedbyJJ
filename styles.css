@@ -8,6 +8,11 @@
   When To Modify:
   - If you change the background color of your webpage, you may need to update this rule too.
 ***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
@@ -945,6 +950,7 @@ section {
 
 
 }
+
 
 
 
