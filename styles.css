@@ -636,7 +636,7 @@ section {
 }
 
 .form-container form {
-  dispaly: flex;
+  display: flex;
   flex-direction: column;
   gap: 12px;
 }
@@ -870,10 +870,12 @@ section {
 
 /** FAQ */ 
 .questions {
-  text-align: center;
-  max-width: 600px; 
-  margin: 0 auto;
-  padding: 20px;
+ display: flex;
+ flex-direction: coulmn;
+ align-items: center;
+ max-width: 600px;
+ margin: 48px auto;
+ padding: 20px;  
 }
 
 
@@ -921,6 +923,7 @@ section {
 
 
 }
+
 
 
 
