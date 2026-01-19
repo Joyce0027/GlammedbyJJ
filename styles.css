@@ -712,6 +712,13 @@ section {
 
 /* ====== MOBILE STYLES ====== */
 @media (max-width: 768px) {
+  .form-container {
+    width: 95%;
+    max-width: none;     /* REMOVE desktop constraint */
+    padding: 16px;
+    max-height: none;    /* IMPORTANT for mobile */
+  }
+
   .booking-form {
     width: 100%;
   }
@@ -719,6 +726,12 @@ section {
   .form-row {
     width: 100%; /* make input fields almost full width */
  
+  }
+
+  .form-row input,
+  .form-row select {
+    font-size: 16px;     /* prevents mobile zoom */
+    padding: 12px;
   }
 
   .submit-btn {
@@ -878,6 +891,16 @@ section {
  padding: 20px;  
 }
 
+.questions strong, p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.question-item {
+  margin-bottom: 25px;
+  text-align: center;
+}
+  
 
 
 
@@ -923,6 +946,7 @@ section {
 
 
 }
+
 
 
 
