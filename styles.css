@@ -715,11 +715,7 @@ html, body {
 /** Mobile Device Friendly **
 /* General form styles (desktop first) */
 
-.form-row {
-  display: flex;
-  flex-direction: column;
-  min-width: 200px;
-}
+
 
 /* Neon heading */
 .neon-heading {
@@ -999,6 +995,7 @@ html, body {
 
 
 }
+
 
 
 
