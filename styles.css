@@ -756,6 +756,14 @@ html, body {
 
 /* ====== MOBILE STYLES ====== */
 @media (max-width: 768px) {
+
+   #booking-section {
+    display: block;        /* remove flex centering */
+    min-height: auto;      /* allow natural height */
+    padding: 20px 12px;
+   }
+
+     
   .form-container {
     width: 95%;
     max-width: none;     /* REMOVE desktop constraint */
@@ -763,6 +771,7 @@ html, body {
     max-height: none;    /* IMPORTANT for mobile */
   }
 
+     
   .booking-form {
     width: 100%;
   }
@@ -990,6 +999,7 @@ html, body {
 
 
 }
+
 
 
 
