@@ -8,11 +8,7 @@
   When To Modify:
   - If you change the background color of your webpage, you may need to update this rule too.
 ***/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 html {
   scroll-behavior: smooth;
@@ -50,7 +46,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     /* Put space around the edges of the webpage */
      margin-top:40px;
-     padding:20px;
+     padding:0;
 
      
    
@@ -950,6 +946,7 @@ section {
 
 
 }
+
 
 
 
