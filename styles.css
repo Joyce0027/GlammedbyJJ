@@ -935,7 +935,7 @@ html, body {
  padding: 20px;  
 }
 
-.questions strong, p {
+.questions strong, {
   text-align: center;
   margin-bottom: 30px;
 }
@@ -990,6 +990,7 @@ html, body {
 
 
 }
+
 
 
 
