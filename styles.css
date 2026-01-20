@@ -46,7 +46,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     /* Put space around the edges of the webpage */
      margin-top:40px;
-     padding:0;
+     padding:60px;
 
      
    
@@ -629,28 +629,72 @@ section {
 }
 
 /** Booking Section **/
+/* ===== BOOKING SECTION FIX ===== */
+
 #booking-section {
   display: flex;
+  justify-content: center;
   align-items: center;
-  min-height: 100vh; /* centers vertically on screen */
-}
-
-.form-container form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
 .form-container {
+  background: black;
   width: 100%;
-  max-width: 420px;      /* FIXED form width */
-  max-height: 550px;     /* CONTROLS how tall it gets */
+  max-width: 420px;
+  max-height: 560px;
   padding: 24px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 16px;
+  box-shadow: 0 0 40px hotpink;
+  overflow-y: auto;
+}
 
-  overflow-y: auto;      /* scrolls if form is too long */
+/* Form layout */
+.booking-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.form-row label {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: hotpink;
+}
+
+.form-row input,
+.form-row select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+/* Button */
+.submit-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  background: hotpink;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Prevent horizontal overflow */
+html, body {
+  overflow-x: hidden;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+  .form-container {
+    max-width: 95%;
+    max-height: none;
+  }
 }
 
 
@@ -946,6 +990,7 @@ section {
 
 
 }
+
 
 
 
