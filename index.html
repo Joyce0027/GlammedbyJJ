@@ -298,63 +298,55 @@
 </div>
 
 <section id="booking-section">
-   <div class = "neon-heading">
-       <h1> Book Your Appointment </h1>
+  <div class="neon-heading">
+    <h1>Book Your Appointment</h1>
+  </div>
 
-   </div>
-    
-<form>
-    <form action="https://formspree.io/f/mjgbnzwv" method="POST" class="booking-form">
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" required>
-</div>
-    
+  <form
+    action="https://formspree.io/f/mjgbnzwv"
+    method="POST"
+    class="booking-form"
+    id="bookingForm"
+  >
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
 
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
-</div>
-    
-   
-      <label for="social">Instagram (Optional):</label>
-      <input type="social" id="social" name="social">
-</div>
+    <input type="email" id="email" name="email" required>
 
-  
-      <label for="service">Service:</label>
-<select id="service" name="service">
-      <option value="" disabled selected> Please Select </option>
-    <option value="soft-glam">Soft Glam ($80)</option>
-    <option value="full-glam">Full Glam ($100)</option>
-    <option value="natural-glam">Natural Glam ($60)</option>
-</select>
-</div>
+    <label for="social">Instagram (Optional):</label>
+    <input type="text" id="social" name="social">
 
-      <label for="date">Date:</label>
-      <input type="date" id="date" name="date" required>
-</div>
+    <label for="service">Service:</label>
+    <select id="service" name="service" required>
+      <option value="" disabled selected>Please Select</option>
+      <option value="soft-glam">Soft Glam ($80)</option>
+      <option value="full-glam">Full Glam ($100)</option>
+      <option value="natural-glam">Natural Glam ($60)</option>
+    </select>
 
-     <label for="time">Time:</label>
-     <input type="time" id="time" name="time" required>
-</div>
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" required>
+
+    <button type="submit">Book Now</button>
+  </form>
 
 
     
-  <button type="submit">Book Now</button>
-
-
-     <div id="deposit-popup" class="popup">
+  <!-- POPUP -->
+  <div id="deposit-popup" class="popup">
     <div class="popup-content">
-      <h3> After Booking Submitted 💖</h3>
-      <p>Please DM <strong>@GlammedbyJJ</strong> to send your deposit and secure your appointment!</p>
+      <h3>After Booking Submitted 💖</h3>
+      <p>
+        Please DM <strong>@GlammedbyJJ</strong> to send your deposit and secure your appointment!
+      </p>
       <button onclick="closePopup()">Got it!</button>
     </div>
-          </div>
-    </form>
+  </div>
 </section>
-    
-</div>
-
-
 
             
         <!-- links
@@ -468,6 +460,7 @@
      <script src="index.js"></script>
 </body>
     </html>
+
 
 
 
