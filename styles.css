@@ -939,6 +939,7 @@ html, body {
  max-width: 600px;
  margin: 48px auto;
  padding: 20px;  
+ gap: 20px;
 }
 
 .questions strong {
@@ -947,10 +948,11 @@ html, body {
 }
 .question-item p {
   color: white;
+  align-items: center;
 }
   
 .question-item {
-  background: #ff5fbf; /* pretty pink */
+  background: #ffd1e8;
   color: white;
   padding: 20px;
   border-radius: 15px;
@@ -1019,6 +1021,7 @@ html, body {
 
 
 }
+
 
 
 
