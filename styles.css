@@ -752,90 +752,118 @@ html, body {
 }
 
 /* ====== MOBILE STYLES ====== */
+/* ================== MOBILE FRIENDLY STYLES ================== */
 @media (max-width: 768px) {
 
-   #booking-section {
-    display: block;        /* remove flex centering */
-    min-height: auto;      /* allow natural height */
-    padding: 20px 12px;
-   }
-
-     
-  .form-container {
-    width: 95%;
-    max-width: none;     /* REMOVE desktop constraint */
-    padding: 16px;
-    max-height: none;    /* IMPORTANT for mobile */
+  /* ----- Body & General Padding ----- */
+  body {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 14px;
   }
 
-     
-  .booking-form {
+  /* ----- Headings ----- */
+  h1 {
+    font-size: 2rem; /* ~32px */
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+
+  /* ----- Section layout ----- */
+  section {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 15px;
+  }
+
+  /* ----- FAQ Boxes ----- */
+  .questions {
+    max-width: 95%;
+    padding: 10px;
+    gap: 15px;
+  }
+  .question-item {
+    padding: 15px;
+  }
+
+  /* ----- Booking Form ----- */
+  #booking-section {
+    min-height: auto;
+    padding: 20px 10px;
+  }
+  .form-container {
+    width: 95%;
+    max-width: none;
+    padding: 16px;
+    max-height: none;
+  }
+  .booking-form, .form-row {
+    width: 100%;
+    gap: 12px;
+  }
+  .form-row input,
+  .form-row select {
+    font-size: 16px;
+    padding: 12px;
+  }
+  .submit-btn {
+    width: 100%;
+    padding: 12px 18px;
+    font-size: 1rem;
+  }
+
+  /* ----- Images ----- */
+  #top-img img, .ceo-image img {
+    width: 90%;
+    height: auto;
+  }
+
+  /* ----- Navbar ----- */
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar ul li {
+    float: none;
+    margin: 10px 0;
+  }
+
+  /* ----- Popups & Modals ----- */
+  .popup-content, .modal-content {
+    width: 90%;
+    max-width: none;
+    padding: 20px;
+  }
+
+  /* ----- Boxes & Cards ----- */
+  .fee-box, .service-box, .policy-box, .block {
+    width: 95%;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  /* ----- Neon Headings ----- */
+  .neon-heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  /* ----- RSVP / Other Flexible Rows ----- */
+  .rsvp-container, #Glam-container, .hours {
+    flex-direction: column;
+    gap: 15px;
     width: 100%;
   }
 
-  .form-row {
-    width: 100%; /* make input fields almost full width */
- 
-  }
-
-  .form-row input,
-  .form-row select {
-    font-size: 16px;     /* prevents mobile zoom */
-    padding: 12px;
-  }
-
-  .submit-btn {
-    width: 100%; /* button full width */
-  }
-
-  .neon-heading {
-    font-size: 1.5rem; /* slightly smaller on mobile */
-  }
 }
-
-
-/*Structure for Hours*/
-.hours {
-  display: flex;
-  flex-direction: column;
-  align-items: center;     /* centers horizontally */
-  justify-content: center; /* centers vertically if needed */
-  text-align: center;      /* centers text */
-  margin: 40px auto;       /* centers block on page */
-}
-
-
-  
- .block {
-    display: block;
-    background-color: black;           /* black card background */
-    color: hotpink;                     /* hot-pink text */
-    text-decoration: none;             /* remove underline */
-    border: 2px solid hotpink;         /* pink border */
-    border-radius: 15px;               /* rounded corners */
-    padding: 20px;
-    margin: 15px 0;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.block h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-}
-
-.block p {
-    margin: 0;
-    font-size: 1rem;
-}
-
-.block:hover {
-    background-color: hotpink;         /* pink background on hover */
-    color: black;                       /* black text on hover */
-    transform: translateY(-5px);        /* lift effect */
-    box-shadow: 0 6px 20px rgba(255,20,147,0.6); /* pink glow */
-}
-
 
 
 /*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
@@ -974,6 +1002,7 @@ html, body {
 .question-item p {
   font-size: 1rem;
   margin: 0;
+  }
 }
 
 
@@ -1021,6 +1050,7 @@ html, body {
 
 
 }
+
 
 
 
