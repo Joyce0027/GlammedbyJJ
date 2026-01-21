@@ -751,7 +751,6 @@ html, body {
   box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
 }
 
-/* ====== MOBILE STYLES ====== */
 /* ================== MOBILE FRIENDLY STYLES ================== */
 @media (max-width: 768px) {
 
@@ -783,14 +782,27 @@ html, body {
     gap: 15px;
   }
 
-  /* ----- FAQ Boxes ----- */
+  /* ----- Boxes ----- */
+  .question-item,
+  .fee-box,
+  .service-box,
+  .policy-box,
+  .block {
+    display: block;
+    width: 95%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: hotpink; /* keeps your hot pink style */
+    color: white;
+    box-shadow: 0 6px 14px rgba(255, 20, 147, 0.5);
+    border-radius: 15px;
+  }
+
+  /* ----- FAQ spacing ----- */
   .questions {
     max-width: 95%;
     padding: 10px;
     gap: 15px;
-  }
-  .question-item {
-    padding: 15px;
   }
 
   /* ----- Booking Form ----- */
@@ -801,17 +813,26 @@ html, body {
   .form-container {
     width: 95%;
     max-width: none;
-    padding: 16px;
+    padding: 20px;
     max-height: none;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
-  .booking-form, .form-row {
+  .booking-form,
+  .form-row {
     width: 100%;
     gap: 12px;
   }
   .form-row input,
   .form-row select {
+    width: 100%;
     font-size: 16px;
     padding: 12px;
+    color: white; /* text visible */
+    background-color: black; /* keeps background readable */
+    border: 1px solid hotpink;
+    border-radius: 6px;
+    box-sizing: border-box;
   }
   .submit-btn {
     width: 100%;
@@ -820,7 +841,8 @@ html, body {
   }
 
   /* ----- Images ----- */
-  #top-img img, .ceo-image img {
+  #top-img img,
+  .ceo-image img {
     width: 90%;
     height: auto;
   }
@@ -837,17 +859,11 @@ html, body {
   }
 
   /* ----- Popups & Modals ----- */
-  .popup-content, .modal-content {
+  .popup-content,
+  .modal-content {
     width: 90%;
     max-width: none;
     padding: 20px;
-  }
-
-  /* ----- Boxes & Cards ----- */
-  .fee-box, .service-box, .policy-box, .block {
-    width: 95%;
-    padding: 15px;
-    margin-bottom: 15px;
   }
 
   /* ----- Neon Headings ----- */
@@ -857,13 +873,23 @@ html, body {
   }
 
   /* ----- RSVP / Other Flexible Rows ----- */
-  .rsvp-container, #Glam-container, .hours {
+  .rsvp-container,
+  #Glam-container,
+  .hours {
     flex-direction: column;
     gap: 15px;
     width: 100%;
   }
 
 }
+
+
+
+
+
+
+
+
 
 
 /*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
@@ -1050,6 +1076,7 @@ html, body {
 
 
 }
+
 
 
 
