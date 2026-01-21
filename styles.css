@@ -945,7 +945,10 @@ html, body {
   text-align: center;
   margin-bottom: 30px;
 }
-
+.question-item p {
+  color: white;
+}
+  
 .question-item {
   background: #ff5fbf; /* pretty pink */
   color: white;
@@ -1016,6 +1019,7 @@ html, body {
 
 
 }
+
 
 
 
