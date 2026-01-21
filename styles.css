@@ -65,7 +65,7 @@ body {
 
 h1 {
 
-    font-size: 70px;
+    font-size: 60px;
     text-align:center;
     color:hotpink;
     animation-name: move;
@@ -934,23 +934,43 @@ html, body {
 /** FAQ */ 
 .questions {
  display: flex;
- flex-direction: coulmn;
+ flex-direction: column;
  align-items: center;
  max-width: 600px;
  margin: 48px auto;
  padding: 20px;  
 }
 
-.questions strong, {
+.questions strong {
   text-align: center;
   margin-bottom: 30px;
 }
 
 .question-item {
-  margin-bottom: 25px;
-  text-align: center;
+  background: #ff5fbf; /* pretty pink */
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(255, 95, 191, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-  
+
+.question-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(255, 95, 191, 0.5);
+}
+.question-item strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.question-item p {
+  font-size: 1rem;
+  margin: 0;
+}
+
 
 
 
@@ -996,6 +1016,7 @@ html, body {
 
 
 }
+
 
 
 
