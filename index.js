@@ -25,17 +25,22 @@ backToTopButton.addEventListener("click", () => {
 
 
 
-const form = document.querySelector("form");
+  const form = document.getElementById("bookingForm");
+  const popup = document.getElementById("deposit-popup");
 
-form.addEventListener("submit", function () {
-  setTimeout(() => {
-    document.getElementById("deposit-popup").style.display = "flex";
-  }, 500);
-});
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // stop page redirect
+    popup.style.display = "flex";
 
-function closePopup() {
-  document.getElementById("deposit-popup").style.display = "none";
-}
+    // submit to Formspree after popup shows
+    setTimeout(() => {
+      form.submit();
+    }, 1200);
+  });
+
+  function closePopup() {
+    popup.style.display = "none";
+  }
 
 
 
@@ -56,6 +61,7 @@ function closePopup() {
 
 // You should remove the original click listener since we are using the form submit listener now:
 // submitButton.addEventListener("click", addParticipant); // <-- Delete this line
+
 
 
 
