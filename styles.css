@@ -835,15 +835,31 @@ html, body {
   }
 
   /* ----- Navbar ----- */
-  .navbar ul {
+ /* ----- MOBILE NAVBAR ----- */
+.navbar ul {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .navbar ul li {
-    float: none;
-    margin: 10px 0;
-  }
+    flex-direction: column;      /* stack vertically */
+    align-items: center;         /* center items horizontally */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.navbar ul li {
+    float: none;                 /* remove float */
+    margin: 8px 0;               /* vertical spacing */
+    width: 100%;                 /* makes links full width for touch */
+    text-align: center;          /* center the text inside */
+}
+
+.navbar ul li a {
+    display: inline-block;       /* allows padding/margins to work properly */
+    width: auto;                 /* adjust width to content */
+    padding: 12px 20px;          /* touch-friendly size */
+    text-align: center;          /* keep text centered */
+}
+
 
   /* ----- Popups & Modals ----- */
   .popup-content,
@@ -1063,6 +1079,7 @@ html, body {
 
 
 }
+
 
 
 
