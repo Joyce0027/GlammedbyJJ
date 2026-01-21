@@ -783,7 +783,6 @@ html, body {
   }
 
   /* ----- Boxes ----- */
-  .question-item,
   .fee-box,
   .service-box,
   .policy-box,
@@ -796,7 +795,10 @@ html, body {
     color: white;
     box-shadow: 0 6px 14px rgba(255, 20, 147, 0.5);
     border-radius: 15px;
+
   }
+
+  
 
   /* ----- FAQ spacing ----- */
   .questions {
@@ -1076,6 +1078,7 @@ html, body {
 
 
 }
+
 
 
 
