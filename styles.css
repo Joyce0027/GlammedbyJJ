@@ -863,7 +863,7 @@ body {
     float: none;                 /* remove float */
     margin: 8px 0;               /* vertical spacing */
     width: 100%;                 /* makes links full width for touch */
-    text-align: center;          /* center the text inside */
+    text-align: right;          /* center the text inside */
 }
 
 .navbar ul li a {
@@ -1112,6 +1112,7 @@ body {
 
 
 }
+
 
 
 
