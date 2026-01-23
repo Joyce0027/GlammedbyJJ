@@ -782,7 +782,20 @@ html, body {
     gap: 15px;
   }
 
-  
+/* ---- Full page pink border ---- */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  border: 3px solid hotpink;
+  box-shadow: 0 0 30px hotpink;
+  border-radius: 18px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
   
 
   /* ----- FAQ spacing ----- */
@@ -859,6 +872,26 @@ html, body {
     padding: 12px 20px;          /* touch-friendly size */
     text-align: center;          /* keep text centered */
 }
+
+  /* ---- Remove navbar dotted lines ---- */
+.navbar ul,
+.navbar ul li {
+  list-style: none;
+  border: none;
+  outline: none;
+}
+
+.navbar ul li a {
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+/* Removes tap highlight on mobile */
+.navbar ul li a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 
 
   /* ----- Popups & Modals ----- */
@@ -1079,6 +1112,7 @@ html, body {
 
 
 }
+
 
 
 
