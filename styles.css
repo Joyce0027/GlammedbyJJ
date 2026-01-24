@@ -36,6 +36,7 @@ body {
     /* Add a background color or image */
     background-color: var(--bg-color);
      background-color: black;; /* see bottom of file for color variables */
+
     
      
     
@@ -829,7 +830,7 @@ body {
     font-size: 16px;
     padding: 12px;
     color: white; /* text visible */
-    background-color: black; /* keeps background readable */
+    background-color: white; /* keeps background readable */
     border: 1px solid hotpink;
     border-radius: 6px;
     box-sizing: border-box;
@@ -1112,6 +1113,7 @@ body {
 
 
 }
+
 
 
 
