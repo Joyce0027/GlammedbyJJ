@@ -689,48 +689,6 @@ html, body {
   overflow-x: hidden;
 }
 
-/* ===== MOBILE ===== */
-@media (max-width: 600px) {
-  .form-container {
-    max-width: 95%;
-    max-height: none;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Neon heading */
-.neon-heading {
-  color: #ff00ff;
-  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-/* Input and select */
-.form-row input,
-.form-row select {
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  width: 100%;
-}
 
 /* Submit button */
 .submit-btn {
@@ -800,11 +758,11 @@ body {
   }
 
   /* ----- Booking Form ----- */
-  #booking-section {
+  #booking-form {
     min-height: auto;
     padding: 20px 10px;
   }
-  .form-container {
+  .booking-form{
     width: 85%;
     max-width: none;
     padding: 20px;
@@ -1103,6 +1061,7 @@ body {
 
 
 }
+
 
 
 
