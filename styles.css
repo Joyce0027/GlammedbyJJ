@@ -843,6 +843,13 @@ body {
 }
 
 
+  /*Hours */
+  .hours {
+  text-align: center;
+  margin: 0 auto;
+}
+
+
 
   /* ----- Popups & Modals ----- */
   .popup-content,
@@ -1062,6 +1069,7 @@ body {
 
 
 }
+
 
 
 
