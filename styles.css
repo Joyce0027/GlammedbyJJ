@@ -719,7 +719,8 @@ html, body {
 
   /* ----- Headings ----- */
   h1 {
-    font-size: 2rem; /* ~32px */
+    font-size: 2.2rem; /* ~32px */
+    text-align: center;
   }
   h2 {
     font-size: 1.5rem;
@@ -1069,6 +1070,7 @@ body {
 
 
 }
+
 
 
 
