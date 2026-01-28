@@ -554,10 +554,10 @@ section {
 }
 
 .navbar ul li {
-    float: right;
+ 
     margin-left: 60px;
     margin-right:30px;
-    border-radius: 5px;
+   
     border-style:dotted;
     border-color: white;
 
@@ -608,17 +608,11 @@ section {
   min-width: 200px;       /* makes each row consistent width */
 }
 
-/* Input and select styling */
-.form-row input,
-.form-row select {
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
+
 
 /* Submit button styling */
 .submit-btn {
-  background-color: #ff00ff;
+  background-color: hotpink;
   color: white;
   padding: 12px 25px;
   border: none;
@@ -630,7 +624,7 @@ section {
 }
 
 .submit-btn:hover {
-  box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+  box-shadow: hotpink;
 }
 
 /** Booking Section **/
@@ -718,8 +712,6 @@ html, body {
 
 
 
-/** Mobile Device Friendly **
-/* General form styles (desktop first) */
 
 
 
@@ -742,7 +734,7 @@ html, body {
 
 /* Submit button */
 .submit-btn {
-  background-color: #ff00ff;
+  background-color: hotpink;
   color: white;
   padding: 12px 25px;
   border: none;
@@ -910,7 +902,7 @@ body {
   /* ----- RSVP / Other Flexible Rows ----- */
   .rsvp-container,
   #Glam-container,
-  .hours {
+   {
     flex-direction: column;
     gap: 15px;
     width: 100%;
@@ -1111,6 +1103,7 @@ body {
 
 
 }
+
 
 
 
