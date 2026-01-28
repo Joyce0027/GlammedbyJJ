@@ -717,6 +717,40 @@ html, body {
   box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
 }
 
+
+
+/* My Links */
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;   /* centers the boxes */
+  align-items: center;
+  margin: 20px auto;
+}
+
+.links a {
+  background-color: #ff8fcf;      /* cute pink */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;            /* pill shape */
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(255, 20, 147, 0.35);
+  transition: all 0.25s ease;
+}
+
+/* Hover effect */
+.links a:hover {
+  background-color: #ff1493;      /* hot pink */
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 20, 147, 0.6);
+  color: white;
+}
+
+
+
+
 /* ================== MOBILE FRIENDLY STYLES ================== */
 @media (max-width: 768px) {
 
@@ -1080,6 +1114,7 @@ body {
 
 
 }
+
 
 
 
