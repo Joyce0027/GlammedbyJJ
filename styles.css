@@ -664,14 +664,14 @@ section {
   gap: 14px;
 }
 
-.form-row label {
+.booking-form label {
   font-size: 14px;
   margin-bottom: 4px;
   color: hotpink;
 }
 
-.form-row input,
-.form-row select {
+.booking-form input,
+.booking-form select {
   width: 100%;
   padding: 10px;
   border-radius: 6px;
@@ -819,13 +819,12 @@ body {
     max-height: none;
     box-sizing: border-box;
   }
-  .booking-form,
-  .form-row {
+  .booking-form {
     width: 100%;
     gap: 12px;
   }
-  .form-row input,
-  .form-row select {
+  .booking-form input,
+  .booking-form select {
     width: 100%;
     font-size: 16px;
     padding: 12px;
@@ -1112,6 +1111,7 @@ body {
 
 
 }
+
 
 
 
