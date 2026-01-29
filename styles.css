@@ -1027,18 +1027,19 @@ body {
   flex-direction: column;      /* STACK vertically */
   gap: 14px;                   /* space between boxes */
   justify-content: center;
-  align-items: center;         /* center boxes horizontally */
+  align-items: left;         /* center boxes horizontally */
+  width: 100;
   margin: 20px auto;
 }
 
 /* INDIVIDUAL LINKS */
 #links a {
-  background-color: #ff8fcf;      /* cute pink */
+  background-color: hotpink;      /* cute pink */
   color: white;                   /* letters white */
   padding: 12px 0;                /* vertical padding */
   width: 160px;                   /* same width for all */
   text-align: center;             /* center text inside box */
-  border-radius: 5px;             /* slight corners, change to 0 for sharp */
+  border-radius: 0px;             /* slight corners, change to 0 for sharp */
   text-decoration: none;
   font-weight: bold;
   box-shadow: 0 4px 12px rgba(255, 20, 147, 0.35);
@@ -1100,6 +1101,7 @@ body {
 
 
 }
+
 
 
 
