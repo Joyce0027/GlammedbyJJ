@@ -748,6 +748,11 @@ html, body {
     font-size: 1rem;
   }
 
+  p {
+  max-width: 100%; 
+   box-sizing: border-box;
+  }
+
   /* ----- Section layout ----- */
   section {
     flex-direction: column !important;
@@ -1098,6 +1103,7 @@ body {
 
 
 }
+
 
 
 
