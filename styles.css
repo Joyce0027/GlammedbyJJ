@@ -866,6 +866,13 @@ body {
     padding: 20px;
   }
 
+  
+ #back-to-top {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
   /* ----- Neon Headings ----- */
   .neon-heading {
     font-size: 1.5rem;
@@ -1108,6 +1115,7 @@ body {
 
 
 }
+
 
 
 
