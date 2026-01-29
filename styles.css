@@ -537,7 +537,15 @@ section {
     box-shadow: 0 6px 16px rgba(255,20,147,0.7);
 }
 
+  #links {
+    flex-direction: row;       /* horizontal layout */
+    width: auto;               /* let it expand naturally */
+    justify-content: center;   /* center the row */
+  }
 
+  #links a {
+    width: 180px;              /* set fixed width for each box */
+  }
 .navbar ul {
     z-index: 1000;
     list-style-type: none;
@@ -1103,6 +1111,7 @@ body {
 
 
 }
+
 
 
 
