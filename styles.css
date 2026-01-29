@@ -1024,34 +1024,31 @@ body {
 /* My Links */
 #links {
   display: flex;
-  flex-direction: column;      /* STACK vertically */
-  gap: 14px;                   /* space between boxes */
+  flex-direction: column;   /* stack vertically */
+  gap: 14px;                /* space between boxes */
   justify-content: center;
-  align-items: flex-start;         /* center boxes horizontally */
-  width: 100;
+  align-items: center;      /* center horizontally */
   margin: 20px auto;
+  width: 200px;             /* same width for all boxes */
 }
 
-/* INDIVIDUAL LINKS */
 #links a {
-  background-color: hotpink;      /* cute pink */
-  color: white;                   /* letters white */
-  padding: 15px 30px;                /* vertical padding */
-  width: 220px;                   /* same width for all */
-  text-align: center;             /* center text inside box */
-  border-radius: 0px;             /* slight corners, change to 0 for sharp */
+  background-color: black;               /* black boxes */
+  color: white;                          /* white letters */
+  text-align: center;                     /* center text inside box */
+  padding: 15px 0;                        /* vertical padding */
+  width: 100%;                            /* full width of container */
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 0 4px 12px rgba(255, 20, 147, 0.35);
-  transition: all 0.25s ease;
+  border-radius: 8px;                     /* slightly rounded corners */
+  box-shadow: 0 0 15px hotpink;           /* hot pink glow */
+  transition: all 0.3s ease;
 }
 
-/* Hover effect */
 #links a:hover {
-  background-color: #ff1493;      /* hot pink */
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 20px rgba(255, 20, 147, 0.6);
-  color: white;
+  box-shadow: 0 0 25px hotpink, 0 0 40px hotpink; /* stronger glow on hover */
+  transform: translateY(-3px) scale(1.03);
+  color: hotpink;                              /* optional: letters turn hotpink */
 }
 
 }
@@ -1101,6 +1098,7 @@ body {
 
 
 }
+
 
 
 
