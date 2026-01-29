@@ -514,6 +514,7 @@ section {
 ***/
 
 #back-to-top {
+    display: none;
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -527,8 +528,7 @@ section {
     box-shadow: 0 4px 12px rgba(255,20,147,0.5);
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
     z-index: 1000;
-    /* For testing, you can set display: block; first */
-    display: block; /* <-- temporary so you can see it */
+
 }
 
 #back-to-top:hover {
@@ -1101,6 +1101,7 @@ body {
 
 
 }
+
 
 
 
