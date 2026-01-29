@@ -713,31 +713,9 @@ html, body {
   box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
 }
 
-/* Back to Top Button */
-#back-to-top {
-  display: none; /* hidden by default, shown via JS */
-  position: fixed;
-  bottom: 40px;          /* distance from bottom of screen */
-  right: 40px;           /* distance from right of screen */
-  z-index: 1000;         /* make sure it's on top */
-  background-color: hotpink;
-  color: white;
-  border: none;
-  border-radius: 0;      /* straight edges */
-  padding: 12px 18px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 0 10px hotpink; /* subtle glow */
-  transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
-}
 
-/* Hover effect */
-#back-to-top:hover {
-  background-color: #ff69b4; /* slightly lighter hotpink */
-  transform: scale(1.1);     /* grow slightly */
-  box-shadow: 0 0 20px hotpink; /* stronger glow on hover */
-}
+
+
 
 
 
@@ -867,12 +845,7 @@ body {
   }
 
   
- #back-to-top {
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 14px;
-    font-size: 14px;
-  }
+
   /* ----- Neon Headings ----- */
   .neon-heading {
     font-size: 1.5rem;
@@ -1115,6 +1088,7 @@ body {
 
 
 }
+
 
 
 
