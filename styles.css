@@ -1027,7 +1027,7 @@ body {
   flex-direction: column;      /* STACK vertically */
   gap: 14px;                   /* space between boxes */
   justify-content: center;
-  align-items: left;         /* center boxes horizontally */
+  align-items: flex-start;         /* center boxes horizontally */
   width: 100;
   margin: 20px auto;
 }
@@ -1036,8 +1036,8 @@ body {
 #links a {
   background-color: hotpink;      /* cute pink */
   color: white;                   /* letters white */
-  padding: 12px 0;                /* vertical padding */
-  width: 160px;                   /* same width for all */
+  padding: 15px 30px;                /* vertical padding */
+  width: 220px;                   /* same width for all */
   text-align: center;             /* center text inside box */
   border-radius: 0px;             /* slight corners, change to 0 for sharp */
   text-decoration: none;
@@ -1101,6 +1101,7 @@ body {
 
 
 }
+
 
 
 
