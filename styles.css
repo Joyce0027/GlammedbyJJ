@@ -561,7 +561,7 @@ section {
     
 
     
-   
+  
     
 }
 
@@ -583,9 +583,18 @@ section {
 .navbar ul li a {
   text-decoration: none;
   color: white;
-  padding: 8px 12px;
+  background-color: hotpink;  /* hotpink box */
+  padding: 10px 16px;         /* padding inside box */
   display: block;
+  border-radius: 0;           /* straight edges */
+  font-weight: bold;
+  transition: background 0.3s;
 }
+
+.navbar ul li a:hover {
+  background-color: #ff69b4; /* slightly different hotpink on hover */
+}
+
 
 
 
@@ -839,12 +848,13 @@ body {
 .navbar ul {
     flex-direction: column;   /* stack vertically */
     gap: 10px;                /* smaller gap for mobile */
+    align-items: flex-end;    /* align items to the right */
+    padding-right: 20px;      /* optional padding from the right edge */
   }
 
   .navbar ul li {
     margin: 0;                /* remove horizontal spacing */
   }
-
   /* ----- Popups & Modals ----- */
   .popup-content,
   .modal-content {
@@ -1095,6 +1105,7 @@ body {
 
 
 }
+
 
 
 
