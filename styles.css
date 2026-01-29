@@ -793,7 +793,7 @@ body {
   display: flex;
   flex-direction: column; /* stack items vertically */
   gap: 15px;              /* space between each price item */
-  align-items: flex-start; /* align items to the left */
+  align-items: center; 
 }
   
 
@@ -848,7 +848,7 @@ body {
 .navbar ul {
     flex-direction: column;   /* stack vertically */
     gap: 10px;                /* smaller gap for mobile */
-    align-items: flex-end;    /* align items to the right */
+    align-items: flex-start;    /* align items to the right */
     padding-right: 20px;      /* optional padding from the right edge */
   }
 
@@ -1105,6 +1105,7 @@ body {
 
 
 }
+
 
 
 
