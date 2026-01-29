@@ -1042,7 +1042,7 @@ body {
 
 
 /* My Links */
-.links {
+#links {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
@@ -1051,7 +1051,7 @@ body {
   margin: 20px auto;
 }
 
-.links a {
+#links a {
   background-color: #ff8fcf;      /* cute pink */
   color: white;
   padding: 10px 20px;
@@ -1063,7 +1063,7 @@ body {
 }
 
 /* Hover effect */
-.links a:hover {
+#links a:hover {
   background-color: #ff1493;      /* hot pink */
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 8px 20px rgba(255, 20, 147, 0.6);
@@ -1116,6 +1116,7 @@ body {
 
 
 }
+
 
 
 
