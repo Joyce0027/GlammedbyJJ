@@ -823,7 +823,7 @@ body {
  /* ----- MOBILE NAVBAR ----- */
 .navbar ul {
   display: flex;
-  flex-direction: row;      /* HORIZONTAL layout */
+  flex-direction: column;      
   justify-content: center;  /* centers items in the row */
   align-items: center;      /* vertically aligns links */
   padding: 0;
@@ -1103,6 +1103,7 @@ body {
 
 
 }
+
 
 
 
