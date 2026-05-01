@@ -1,67 +1,90 @@
-/*** You will not need this file until Unit 5 ***/
-
-document.getElementById("button").addEventListener("click", function () {
-  document.getElementById("booking-section").scrollIntoView({ behavior: "smooth" });
+// ===== SCROLL REVEAL =====
+const revealElements = document.querySelectorAll('.reveal');
+const revealOnScroll = () => {
+    revealElements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        
+        if (elementTop < windowHeight - 100) {
+            el.classList.add('visible');
+        }
+    });
+};
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+// ===== FAQ ACCORDION =====
+const faqItems = document.querySelectorAll('.faq-item');
+faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    
+    question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        
+        // Close all
+        faqItems.forEach(i => i.classList.remove('active'));
+        
+        // Open clicked (if wasn't already open)
+        if (!isActive) {
+            item.classList.add('active');
+        }
+    });
 });
-
-
-
-const backToTopButton = document.getElementById("back-to-top");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    backToTopButton.style.display = "block";
-  } else {
-    backToTopButton.style.display = "none";
-  }
+// ===== BACK TO TOP =====
+const backToTop = document.getElementById('back-to-top');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        backToTop.classList.add('visible');
+    } else {
+        backToTop.classList.remove('visible');
+    }
 });
-
-backToTopButton.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
+backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });
-
-
-
-  const form = document.getElementById("bookingForm");
-  const popup = document.getElementById("deposit-popup");
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault(); // stop page redirect
-    popup.style.display = "flex";
-
-    // submit to Formspree after popup shows
-    setTimeout(() => {
-      form.submit();
-    }, 1200);
-  });
-
-  function closePopup() {
-    popup.style.display = "none";
-  }
-
-
-
-
-
-
-
-
-/*** Form Handling [PLACEHOLDER] [ADDED IN UNIT 6] ***/
-
-
-/*** Form Validation [PLACEHOLDER] [ADDED IN UNIT 7] ***/
-
-
-//Step 1: Add your query for the submit RSVP button here
-
-// Get the Form element and the button element
-
-// You should remove the original click listener since we are using the form submit listener now:
-// submitButton.addEventListener("click", addParticipant); // <-- Delete this line
-
+// ===== NAVBAR HIDE ON SCROLL DOWN =====
+let lastScroll = 0;
+const navbar = document.querySelector('.navbar');
+window.addEventListener('scroll', () => {
+    const currentScroll = window.scrollY;
+    
+    if (currentScroll > lastScroll && currentScroll > 100) {
+        navbar.style.transform = 'translateY(-100%)';
+    } else {
+        navbar.style.transform = 'translateY(0)';
+    }
+    
+    lastScroll = currentScroll;
+});
+// ===== SERVICE CARD TILT =====
+const tiltCards = document.querySelectorAll('[data-tilt]');
+tiltCards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = (y - centerY) / 15;
+        const rotateY = (centerX - x) / 15;
+        
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
+    });
+    
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+    });
+});
+// ===== SMOOTH SCROLL FOR NAV LINKS =====
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+});
 
 
 
