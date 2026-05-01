@@ -1,72 +1,1082 @@
-/* ===== VARIABLES ===== */
-:root {
-    --pink: #ff1493;
-    --pink-light: #ff69b4;
-    --pink-glow: rgba(255, 20, 147, 0.5);
-    --black: #000;
-    --black-light: #111;
-    --black-card: #1a1a1a;
-    --white: #fff;
-    --gray: #aaa;
+html {
+  scroll-behavior: smooth;
 }
 
-/* ===== RESET & BASE ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 html {
-    scroll-behavior: smooth;
+    background-color: var(--bg-color);
+     
 }
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+/*** body ***
+  
+  Purpose:
+  - Add style rules for the body of your webpage
+  - This is useful if you want a rule to apply to EVERYTHING on your page
+    - (Tip: You can always override these rules later in the stylesheet)
+
+  When To Modify:
+  - [ ] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: var(--black);
-    color: var(--white);
-    line-height: 1.6;
-    overflow-x: hidden;
+    /* Add a background color or image */
+    background-color: var(--bg-color);
+     background-color: black;; /* see bottom of file for color variables */
+
+    
+     
+    
+
+    /* Customize the default size, color, and font for text*/
+    font-size: 15px;
+    color: var(--text-color);
+    font-family: 'Times New Roman', Times, serif;
+    /* Put space around the edges of the webpage */
+     margin-top:40px 0 0 0;
+     padding: 0 20px;
+     box-sizing: border-box;
+
+     
+   
 }
 
-h1, h2, h3 {
-    font-family: 'Georgia', serif;
-    font-weight: 400;
+/*** Text ***
+  
+  Purpose: 
+  - Add style rules for headings (h1-6),
+    paragraphs (p), links (a), and buttons
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+h1 {
+
+    font-size: 60px;
+    text-align:center;
+    color:hotpink;
+    animation-name: move;
+    text-shadow: 4px 4px 3px  white;
+
+  
+    
 }
 
-/* ===== ANIMATED BACKGROUND ===== */
-.bg-glow {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
-    background: 
-        radial-gradient(circle at 20% 80%, var(--pink-glow) 0%, transparent 40%),
-        radial-gradient(circle at 80% 20%, var(--pink-glow) 0%, transparent 40%);
-    opacity: 0.3;
-    animation: bgPulse 8s ease-in-out infinite alternate;
+h2 {
+    color:white;
+    text-align: center;
+    background-color:hotpink;
 }
 
-@keyframes bgPulse {
-    0% { opacity: 0.2; transform: scale(1); }
-    100% { opacity: 0.4; transform: scale(1.1); }
+h3 {
+    color:white;
 }
 
-/* ===== NAVBAR ===== */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 12px 30px;
-    display: flex;
-    justify-content: space-between;
+h4 {
+    color:hotpink;
+}
+
+p {
+    color:hotpink;
+   
+}
+
+a,
+a * {
+    
+}
+
+button {
+  background-color: rgb(227, 116, 171);             /* bright cute pink */
+  color: white;                          /* white text pops */
+  border: none;                          /* no default border */
+  padding: 10px 18px;                    /* comfy size */
+  border-radius: 25px;                   /* pill-shaped button */
+  font-size: 1rem;                       /* cleaner text */
+  font-weight: bold;                     /* cute bold text */
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.4); /* soft glow */
+  transition: all 0.25s ease;            /* smooth animation */
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #ff1493;             /* deeper hot pink */
+  transform: translateY(-3px);           /* lifts the button */
+  box-shadow: 0 6px 16px rgba(255, 20, 147, 0.6); /* stronger glow */
+}
+
+/* Active click effect */
+button:active {
+  transform: scale(0.96);                /* small press animation */
+}
+
+
+.header-button
+{
+    position:absolute;
+    gap:10px;
+    top: 2px;
+    right:20px;
+
+}
+
+button:hover {
+   color:purple;
+
+}
+
+.logo-container
+{
+    width:30px;
+}
+
+
+
+#Glam-container {
+  
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+.softglams{
+  display:inline;
+  text-align:center;
+
+}
+.fullglams{
+  display:inline-block;
+  width:200;
+  margin-right:10px;
+  text-align:center;
+  
+}
+
+.natrualglams {
+ 
+  text-align:center;
+  
+
+}
+
+#service
+{
+  padding:10px;
+}
+
+
+
+
+
+/*** header ***
+  
+  Purpose:
+  - Add style rules for your website's header section
+
+  When To Modify:
+  - [X] Project 3 (REQUIRED FEATURE) 
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+#header-container {
+ display:flex;
+ flex-direction:column;
+ width:100%;
+  
+}
+
+.header-item h1 {
+ 
+ text-align:left;
+ padding:20px;
+ margin-bottom: -20px;
+ margin-top:20px;
+
+}
+
+.banner {
+  width:100%;
+  text-align:center;
+  padding:10px;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;                 /* makes items in a row */
+  flex-direction: row;           /* ensures horizontal layout */
+  justify-content: space-between; /* even spacing between items */
+  align-items: center;           /* vertical alignment in row */
+  gap: 20px;                     /* space between items */
+  padding: 10px;
+  flex-wrap: nowrap;             /* keeps everything in one row */
+}
+
+#booking-section {
+  display: block;
+}
+
+
+
+
+
+#top-img img {
+  width: 300px; /* same width for all images */
+  height: auto;
+  object-fit: cover; /* keeps aspect ratio without stretching */
+  border-radius: 10px; /* optional: cute rounded edges */
+}
+
+ 
+#about {
+  display:flex;
+  flex-direction:row;
+  width:100%;
+}
+ .about h1 {
+  padding: 10px;
+  margin-bottom:30px;
+  margin-top:30px;
+ }
+
+ .CEO {
+  background-color: black; 
+  box-shadow: 0 0 60px hotpink inset; /* inner glow from the edges */
+  margin: 0;
+  padding: 0;
+ }
+ .CEO h2 {
+  
+    margin-top: 10px;
+    display: inline;
+    padding: 10px 20px;
+    border-radius:5px;
+   
+    
+ }
+
+ 
+  .CEO p {
+    
+    width:600px;
+    padding:10px;
+    border:2px solid white;
+    margin: 0 auto;
+    
+   
+    color: white;
+    background-color:hotpink;
+    border-radius: 5px;
+
+  }
+
+ 
+
+  .ceo-image {
+   display:flex;
+   flex-direction:row;
+   justify-content: center;
+   align-items:center;
+   margin-top: 30px;
+  }
+
+  .verse {
+    text-align:center;
+    padding:15px;
+    width:100%;
+  }
+
+  #policy-container{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align:center;
+  }
+
+  #policy-container ul{
+   align-items:center;
+    text-align:center;
+  }
+  
+
+  .rsvp-container{
+   display:flex;
+   flex-direction: row;
+   gap: 20px; 
+   width:100%;
+   padding-bottom:50px;
+  }
+
+  .rsvp-para {
+    width:55%;
+    padding-right:10px;
+
+  }
+
+  .rsvp-participants {
+    width: 45%;
+    padding-right: 10px;
+  }
+
+  .error {
+    border-style: solid;
+    border-width: 2px;
+    
+  }
+
+  .fee-boxes {
+  display: flex;
+  gap: 35px; /* bigger space between boxes */
+  flex-wrap: wrap;
+  margin-top: 25px; 
+  justify-content: center; /* centers them nicely */
+}
+
+.fee-box {
+  background-color: #ffe6f2;
+  border: 2px solid #ffb6d5;
+  border-radius: 20px;
+  padding: 25px;
+  width: 160px; 
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.4);
+  transition: transform .2s ease, box-shadow .2s ease;
+  margin-bottom: 20px; /* adds spacing when they wrap */
+}
+
+.fee-box h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #d14c89;
+}
+
+.fee-box p {
+  font-size: 1.25rem;
+  margin-top: 8px;
+  font-weight: bold;
+  color: #b83e77;
+}
+
+.fee-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(255, 182, 193, 0.6);
+}
+
+.service-boxes {
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.service-box {
+  background-color: #ff4da6; /* HOT PINK background */
+  border: 2px solid #ff1493; /* deeper hot pink border */
+  border-radius: 20px;
+  padding: 25px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(255, 20, 147, 0.5); 
+  transition: transform .2s ease, box-shadow .2s ease;
+  margin-bottom: 20px;
+}
+
+.service-box h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: white; /* white pops nicely on hot pink */
+}
+
+.service-box p {
+  font-size: 0.95rem;
+  color: #ffe6f7; /* soft light pink text */
+  line-height: 1.4rem;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(255, 20, 147, 0.7);
+}
+
+
+#policy-container {
+    display: grid;
+    justify-content: column;
+    gap: 30px;  /* space between boxes */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.policy-box {
+    background-color: #ff4da6;       /* hot-pink */
+    border: 2px solid #ff1493;       /* deeper pink */
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 14px rgba(255,20,147,0.4); /* soft glow */
+}
+
+/* Zig-zag: offset every even box */
+.policy-box:nth-child(even) {
+    margin-top: 40px;  /* moves box down statically */
+}
+
+.policy-box h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10
+}
+
+
+.cute-footer {
+  background-color: #f87abd; /* HOT PINK */
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 3px solid #ff4da6;
+}
+
+.cute-footer h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.cute-footer p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #ffe6f7; /* softer pink for contrast */
+}
+
+.footer-links {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #f673b4;
+  padding: 8px 16px;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.4);
+  transition: 0.2s ease;
+}
+
+.footer-links a:hover {
+  background-color: white;
+  color: #ff1493;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(255, 182, 193, 0.6);
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/*** footer ***
+  
+  Purpose:
+  - Add style rules for your website's footer section
+
+  When To Modify:
+  - [ ] Project 3 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+
+  #links {
+    flex-direction: row;       /* horizontal layout */
+    width: auto;               /* let it expand naturally */
+    justify-content: center;   /* center the row */
+  }
+
+  #links a {
+    width: 180px;              /* set fixed width for each box */
+  }
+
+
+
+
+.navbar ul {
+    z-index: 1000;
+    list-style-type: none;
+    overflow:hidden;
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    margin-bottom: -20px;
+    
+
+    
+  
+    
+}
+
+.navbar ul {
+  display: flex;              /* horizontal layout by default */
+  flex-direction: row;        /* horizontal */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;    /* center horizontally */
+  align-items: center;
+  gap: 20px;                  /* space between items */
+}
+
+.navbar ul li {
+  margin: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: hotpink;  /* hotpink box */
+  padding: 10px 16px;         /* padding inside box */
+  display: block;
+  border-radius: 0;           /* straight edges */
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.navbar ul li a:hover {
+  background-color: #ff69b4; /* slightly different hotpink on hover */
+}
+
+
+
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers horizontally */
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+   
+
+/* Neon pink heading */
+.neon-heading {
+  color: #ff00ff;
+  text-shadow:
+    0 0 5px #ff00ff,
+    0 0 10px #ff00ff,
+    0 0 20px #ff00ff,
+    0 0 40px #ff00ff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form layout in horizontal rows */
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;      /* allows rows to wrap on smaller screens */
+  gap: 20px;
+  justify-content: center;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column; /* label above input */
+  min-width: 200px;       /* makes each row consistent width */
+}
+
+
+
+/* Submit button styling */
+.submit-btn {
+  background-color: hotpink;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: center; /* center the button */
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  box-shadow: hotpink;
+}
+
+/** Booking Section **/
+/* ===== BOOKING SECTION FIX ===== */
+
+#booking-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.form-container {
+  background: black;
+  width: 100%;
+  max-width: 420px;
+  max-height: 560px;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 0 40px hotpink;
+  overflow-y: auto;
+}
+
+/* Form layout */
+.booking-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.booking-form label {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: hotpink;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+/* Button */
+.submit-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  background: hotpink;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Prevent horizontal overflow */
+html, body {
+  overflow-x: hidden;
+}
+
+
+/* Submit button */
+.submit-btn {
+  background-color: hotpink;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+
+
+
+
+
+
+
+
+
+/* ================== MOBILE FRIENDLY STYLES ================== */
+@media (max-width: 768px) {
+
+  /* ----- Body & General Padding ----- */
+  body {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* ----- Headings ----- */
+  h1 {
+    font-size: 2.4rem; /* ~32px */
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+
+  p {
+  max-width: 100%; 
+   box-sizing: border-box;
+  }
+
+  /* ----- Section layout ----- */
+  section {
+    flex-direction: column !important;
     align-items: center;
-    background: rgba(0, 0, 0, 0.9);
-    backdrop-filter: blur(10px
+    gap: 15px;
+  }
+
+/* ---- Full page pink border ---- */
+
+
+body {
+  border: 3px solid hotpink;
+  box-shadow: 0 0 30px hotpink;
+  border-radius: 18px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+  /* Glam Prices */
+  #Glam-container {
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  gap: 15px;              /* space between each price item */
+  align-items: center; 
+}
+  
+
+  /* ----- FAQ spacing ----- */
+  .questions {
+    max-width: 95%;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  /* ----- Booking Form ----- */
+  #booking-form {
+    min-height: auto;
+    padding: 20px 10px;
+  }
+  .booking-form{
+    width: 85%;
+    max-width: none;
+    padding: 20px;
+    max-height: none;
+    box-sizing: border-box;
+  }
+  .booking-form {
+    width: 100%;
+    gap: 12px;
+  }
+  .booking-form input,
+  .booking-form select {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    background-color: white; /* keeps background readable */
+    border: 1px solid hotpink;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+  .submit-btn {
+    width: 100%;
+    padding: 12px 18px;
+    font-size: 1rem;
+  }
+
+  /* ----- Images ----- */
+  #top-img img,
+  .ceo-image img {
+    width: 90%;
+    height: auto;
+  }
+
+  /* ----- Navbar ----- */
+ /* ----- MOBILE NAVBAR ----- */
+.navbar ul {
+    flex-direction: column;   /* stack vertically */
+    gap: 10px;                /* smaller gap for mobile */
+    align-items: flex-start;    /* align items to the right */
+    padding-right: 20px;      /* optional padding from the right edge */
+  }
+
+  .navbar ul li {
+    margin: 0;                /* remove horizontal spacing */
+  }
+  /* ----- Popups & Modals ----- */
+  .popup-content,
+  .modal-content {
+    width: 90%;
+    max-width: none;
+    padding: 20px;
+  }
+
+  
+
+  /* ----- Neon Headings ----- */
+  .neon-heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  /* ----- RSVP / Other Flexible Rows ----- */
+  .rsvp-container,
+  #Glam-container,
+   {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+/*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
+.error {
+  border-style: solid;
+  border-width: 2px;
+
+  /* Set border-color and background */
+}
+/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
+/*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
+/*** Dark Mode [PLACEHOLDER] [ADDED IN UNIT 5] ***/
+
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.5); /* Black overlay */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.modal-content {
+  background: black;
+  color: hotpink;
+  margin: 10% auto; 
+  padding: 30px;
+  border: 3px solid black;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  animation: popUp 0.4s ease-out;
+}
+
+@keyframes popUp {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.close-button {
+  color:white;
+  float: right;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-button:hover {
+  color: #fff;
+}
+
+
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 320px;
+}
+
+.popup-content h3 {
+  margin-bottom: 10px;
+}
+
+.popup-content button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+/** FAQ */ 
+.questions {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ max-width: 600px;
+ margin: 48px auto;
+ padding: 20px;  
+ gap: 20px;
+}
+
+.questions strong {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.question-item p {
+  color: white;
+  align-items: center;
+}
+  
+.question-item {
+  background: hot pink;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(255, 95, 191, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.question-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(255, 95, 191, 0.5);
+}
+.question-item strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.question-item p {
+  font-size: 1rem;
+  margin: 0;
+  }
+
+
+/* My Links */
+#links {
+  display: flex;
+  flex-direction: column;   /* stack vertically */
+  gap: 14px;                /* space between boxes */
+  justify-content: center;
+  align-items: center;      /* center horizontally */
+  margin: 20px auto;
+  width: 200px;             /* same width for all boxes */
+}
+
+#links a {
+  background-color: black;               /* black boxes */
+  color: white;                          /* white letters */
+  text-align: center;                     /* center text inside box */
+  padding: 20px;                        /* vertical padding */
+  width: 100%;                            /* full width of container */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;                     /* slightly rounded corners */
+  box-shadow: 0 0 15px hotpink;           /* hot pink glow */
+  transition: all 0.3s ease;
+}
+
+#links a:hover {
+  box-shadow: 0 0 25px hotpink, 0 0 40px hotpink; /* stronger glow on hover */
+  transform: translateY(-3px) scale(1.03);
+  color: hotpink;                              /* optional: letters turn hotpink */
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** Custom Colors (OPTIONAL) ***
+  
+  Purpose:
+  - Use CSS variables to define custom colors for your website
+  - To get you started, we've provided the color scheme used in our example site.
+  - To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+  When To Modify:
+  - [ ] Any time (OPTIONAL)
+***/
+
+:root {
+    /* Light Mode */
+    --bg-color: hotpink;
+    --text-color: white;
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #3e3377;
+    --text-color-dark-mode: #fff;
+
+    /* Accent Colors */
+    --accent-color-light: black;
+    --accent-color-medium: #c23f7c;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+
+
+}
+
 
 
 
